@@ -1,0 +1,184 @@
+p, a, h1, h2, h3, h4, h5, h6, ul, li, input {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.Header {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    padding: 15px 10%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+}
+
+.Header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-image: url("https://images.trvl-media.com/media/content/expvsc/graphics/v29/habillages/fi_hubagence_aut16.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: -9999999;
+}
+
+.Header-form-container {
+    width: 100%;
+}
+
+.Header-form-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.Header-transports-choice {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.Header-transports-choice li button {
+    color: #3e3d40;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 0.5px;
+    z-index: 10;
+    padding: 10px 20px;
+    cursor: pointer;
+	position: relative;
+}
+
+.Header-transports-choice li:first-child button {
+    border-radius: 5px 0 0 5px;
+}
+
+.Header-transports-choice li:last-child button {
+    border-radius: 0 5px 5px 0;
+}
+
+.Header-transports-choice li button:focus {
+    background-color: #1283C5;
+    color: #fff;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.28);
+}
+
+.Header-transports-choice li button:focus:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #1283C5 transparent transparent transparent;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.Header-btn-promo {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #1283C5;
+    color: #1283C5;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 0.8rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.Header-btn-promo span {
+    position: absolute;
+    top: 50%;
+    transform: translate(-105%, -50%);
+    font-size: 2rem;
+    background-color: #1283C5;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.Header-btn-promo span i {
+    position: relative;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.58);
+    top: 2px;
+    right: 1px;
+}
+
+.Header-form-content {
+    background-color: #fff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.31);
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 3px;
+    border-bottom: 3px solid #1283C5;
+}
+
+.Header-form-content-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #FAFAFA;
+    font-size: 0.9rem;
+}
+
+.Header-form-content-header form {
+    display: flex;
+    align-items: center;
+}
+
+.Header-form-content-header form label {
+    margin-right: 15px;
+    margin-left: 5px;
+    padding-left: 20px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Header-form-content-header form input[type="radio"] {
+    display: none;
+}
+
+.Header-form-content-header form label::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 50%;
+    /*background-color: #1283C5;*/
+}
+
+.Header-form-content-header form input[type=radio]:checked .Header-form-content-header form label::before {
+    content: "\2022";
+    color: #f3f3f3;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.Header-form-content-header a {
+    color: #1283C5;
+}
