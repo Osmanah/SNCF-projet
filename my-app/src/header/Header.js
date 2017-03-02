@@ -5,12 +5,12 @@ class Header extends Component {
   render() {
     return (
 
-      <div className="Header">
+      <div className="Header flex">
         <div className="Header-background"></div>
         <div className="Header-form-container">
-          <div className="Header-form-header">
+          <div className="Header-form-header flex space-between">
 
-            <ul className="Header-transports-choice">
+            <ul className="Header-transports-choice flex">
               <li>
                 <button>
                   <i className="fa fa-train"></i>
@@ -67,7 +67,7 @@ class Header extends Component {
               </span>Les petits prix</a>
           </div>
           <div className="Header-form-content">
-            <div className="Header-form-content-header">
+            <div className="Header-form-content-header flex space-between">
               <form>
                 <input type="radio" name="aller" value="allerSimple"/>
                 <label htmlFor="">Aller simple</label>
@@ -78,7 +78,7 @@ class Header extends Component {
                 <i className="fa fa-chevron-right"></i>
               </a>
             </div>
-            <div className="Header-form-content-main">
+            <div className="Header-form-content-main flex space-between">
               <form action="">
                 <p>
                   <span>Départ</span>
@@ -106,7 +106,7 @@ class Header extends Component {
                 </p>
               </form>
               <form action="">
-                <select name="" id="">
+                <select className="select-box" name="" id="">
                   <option value="">00h</option>
                   <option value="">01h</option>
                   <option value="">02h</option>
@@ -133,7 +133,7 @@ class Header extends Component {
                   <option value="">23h</option>
                 </select>
                 <hr/>
-                <select name="" id="">
+                <select className="select-box" name="" id="">
                   <option value="">00h</option>
                   <option value="">01h</option>
                   <option value="">02h</option>
@@ -162,8 +162,8 @@ class Header extends Component {
               </form>
             </div>
             <div className="Header-form-additional-content">
-              <div className="Header-form-travel-class">
-                <form action="">
+              <div className="Header-form-travel-class flex space-between">
+                <form action="" className="flex">
                   <p>
                     <input type="checkbox"/>
                     <label>Trajets directs</label>
@@ -183,10 +183,10 @@ class Header extends Component {
                 </form>
               </div>
               <div className="Header-form-additional-voyager">
-                <div className="Header-form-additional-voyager-control">
-                  <div>
+                <div className="Header-form-additional-voyager-control flex space-between">
+                  <div className="flex space-between">
                     <p>Nombre de voyageurs</p>
-                    <div className="Header-voyager-number">
+                    <div className="Header-voyager-number flex">
                       <button id="Voyager-minus">
                         <i className="fa fa-minus"></i>
                       </button>
@@ -195,11 +195,45 @@ class Header extends Component {
                         <i className="fa fa-plus"></i>
                       </button>
                     </div>
-					<a href="">Plus de 9 voyageurs jusqu'à -65%</a>
+                    <a href="">Plus de 9 voyageurs jusqu'à -65%<span>(2)</span>
+                    </a>
                   </div>
-				  <a href=""><i className="fa fa-wheelchair"></i> Voyageurs handicapés</a>
+                  <a href="">
+                    <i className="fa fa-wheelchair"></i>
+                    Voyageurs handicapés</a>
                 </div>
-                <div className="Header-form-additional-voyager-content"></div>
+                <div className="Header-form-additional-voyager-content">
+                  <form className="Header-form-new-voyager flex space-between">
+                    <p>Voyageur 1</p>
+                    <select className="select-box" id="">
+                      <option value="" selected>26-59ans</option>
+                      <option value="">26-59ans</option>
+                      <option value="">26-59ans</option>
+                    </select>
+                    <select className="select-box" name="" id="">
+                      <option value="" selected>Sans carte de réduction</option>
+                      <option value="">Sans carte de réduction</option>
+                      <option value="">Sans carte de réduction</option>
+                    </select>
+                    <select className="select-box" name="" id="">
+                      <option value="" selected>Sans programme de fidélité</option>
+                      <option value="">Sans programme de fidélité</option>
+                      <option value="">Sans programme de fidélité</option>
+                    </select>
+                    <input className="select-box" type="text" placeholder="Code avantage ou Bon d'achat"/>
+                    <span>
+                      <i className="fa fa-times"></i>
+                    </span>
+                  </form>
+                </div>
+              </div>
+              <div className="Header-form-search flex">
+                <a href="">Horaires seuls</a>
+                <button>Rechercher</button>
+                <a href="">+ de critères</a>
+				<button>
+					<i className="fa fa-chevron-down"></i>
+				</button>
               </div>
             </div>
           </div>

@@ -1,7 +1,40 @@
-p, a, h1, h2, h3, h4, h5, h6, ul, li, input {
+p, a, h1, h2, h3, h4, h5, h6, ul, li, input, button {
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+button, input, select {
+	border: none;
+    box-shadow: none;
+    background-image: none;
+	background: none;
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.space-between {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.select-box {
+	background: #fff;
+	color: #1283C5;
+	padding: 10px;
+	position: relative;
+}
+
+.select-box::after {
+	content: "chevron";
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .Header {
@@ -10,7 +43,6 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input {
     width: 100%;
     padding: 15px 10%;
     box-sizing: border-box;
-    display: flex;
     align-items: flex-end;
 }
 
@@ -32,15 +64,12 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input {
 }
 
 .Header-form-header {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
 }
 
 .Header-transports-choice {
     margin: 0;
-    display: flex;
     padding: 0;
     list-style: none;
 }
@@ -134,8 +163,6 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input {
 }
 
 .Header-form-content-header {
-    display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     padding: 15px 20px;
@@ -183,13 +210,11 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input {
     line-height: 18px;
 }
 
-.Header-form-content-header a {
+.Header-form-content a {
     color: #1283C5;
 }
 
 .Header-form-content-main {
-	display: flex;
-	justify-content: space-between;
 	padding: 15px 20px;
 }
 
@@ -239,7 +264,7 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input {
 	color: #1283C5;
 }
 
-.Header-form-content-main input, .Header-form-content-main select {
+.Header-form-content-main input {
 		padding: 10px;
 }
 
@@ -256,55 +281,68 @@ p, a, h1, h2, h3, h4, h5, h6, ul, li, input {
 	overflow: hidden;
 	padding: 10px 8px;
     width: 100%;
-    border: none;
-    box-shadow: none;
-    background-image: none;
-    -webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-
 }
-
-.Header-form-content-main form select::before {
-	content: "A partir de";
-	/*width: 100%;
-	height: 20px;
-	position: absolute;
-	top: 0;
-	left: 0;*/
-}
-
-.Header-form-content-main form select::after {
-	content: "<i className='fa fa-chevron-down'></i>";
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: red;
-}
-
-
-
-
 
 
 .Header-form-travel-class {
-	display: flex;
-	justify-content: space-between;
-}
-
-.Header-form-travel-class form:first-child {
-	display: flex;
+	padding: 10px 20px;
 }
 
 .Header-form-travel-class form label{
 	margin: 0 10px;
 }
 
-.Header-form-additional-voyager-control.p {
-	display: flex;
-	justify-content: space-between;
+.Header-form-additional-voyager {
+	background-color: #EFF8FC;
+	padding: 20px 20px 40px 20px;
+	box-shadow: inset 0px 5px 6px -4px rgba(0, 0, 0, 0.35), inset 0px -6px 4px -4px rgba(0, 0, 0, 0.35);
 }
 
 .Header-voyager-number {
-	display: flex;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+}
+
+.Header-voyager-number button, .Header-voyager-number p {
+	padding: 0 5px;
+}
+
+.Header-voyager-number button {
+	color: #1283C5;
+}
+
+.Header-form-new-voyager {
+	background-color: #D7EEFD;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+
+
+.Header-form-search {
+	justify-content: center;
+	position: relative;
+	padding-top: 15px;
+	align-items: center;
+	font-size: 0.9rem;
+}
+
+.Header-form-search button:first-of-type {
+	padding: 10px 20px;
+	font-size: 1.1rem;
+text-transform: uppercase;
+background-color: #1283C5;
+color: #fff;
+font-weight: 300;
+border-radius: 5px 5px 0 0;
+margin: 0 10px;
+}
+
+.Header-form-search button:last-of-type {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	color: #1283C5;
 }
