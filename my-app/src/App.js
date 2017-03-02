@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from './header/Header.js';
+import Header from './header/Header';
 // PLACER ICI VOTRE LIEN D'IMPORT
 
 class App extends Component {
