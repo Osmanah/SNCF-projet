@@ -1,0 +1,396 @@
+.topHeader{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+    position: fixed;
+    background-color: white;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.topHeaderMini{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+    position: fixed;
+    background-color: white;
+    height: 38px;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.navbarLeft{
+    display: flex;
+    width: 75%;
+}
+
+.navbarRight{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuNavbar{
+    width: 110px;
+    background-color: #1283C5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuNavbar p{
+    padding-right: 4px;
+}
+
+.menuNavbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.burger{
+    width: 36px;
+    height: 3px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 15%;
+    margin-top: -1px;
+    margin-right: 6px;
+}
+
+.burger::before, .burger::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background: white; 
+  border-radius: 15%; 
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;       
+}
+
+.burger::before {
+    margin-top: -8px;
+}
+
+.burger::after {
+    margin-top: 8px;
+}
+
+/* Animation du burger */
+
+.burger:active {
+  background: #1283C5;
+}
+.burger:active::before {
+  margin-top: 0px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.burger:active::after {
+  margin-top: 0px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.connectionNavbar, .commandeNavbar {
+    color: #1283C5;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: white;
+}
+
+.connectionNavbar {
+    padding-left: 20px;
+}
+
+.connectionNavbar a {
+    color: #1283C5;
+}
+
+.connectionNavbar:hover a {
+    opacity: 0.7;
+}
+
+.commandeNavbar a {
+    color: #1283C5;
+}
+
+.commandeNavbar:hover a {
+    opacity: 0.7;
+}
+
+.fa-user-circle-o, .fa-folder-open-o{
+    margin-top: -1px;
+}
+
+.connectionNavbar p, .commandeNavbar p {
+    padding-left: 7px;
+}
+
+.logoHeader{
+    backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-bottom-color: rgb(0, 0, 238);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: rgb(0, 0, 238);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(0, 0, 238);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(0, 0, 238);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    height: 90.5px;
+    margin-left: 120px;
+    width: 190px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-osx-font-smoothing: grayscale;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.logoHeaderRespons{
+display:none;
+height:40px;
+width: 40px;
+margin-top: 8px;
+}
+
+.logoHeaderMini{
+    
+    backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-bottom-color: rgb(0, 0, 238);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-left-color: rgb(0, 0, 238);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(0, 0, 238);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(0, 0, 238);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    height: 63.36px;
+    margin-left: 140px;
+    margin-top: 10px;
+    width: 133px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -moz-osx-font-smoothing: grayscale;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+
+
+.flagFrance{
+    height: 20px;
+    align-items: center;
+    padding-right: 7px;
+    margin-top: -1px;
+}
+
+.languesNavbar{
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-right: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.fa-chevron-down{
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-top: -2px;
+    color: #1283C5;
+}
+
+
+.containerLangues{
+    width: 370px;
+    height: 250px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 40px;
+    margin-left: -350px;
+    position: absolute;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.19);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.19);
+}
+
+.flagAll{
+    width: 100%;
+}
+
+.helpNavbar {
+    width: 95px;
+    background-color: #F0891F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.helpNavbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.helpNavbar:hover a{
+    opacity: 0.7;
+}
+
+.helpNavbar p{
+    font-size: 14px;
+    font-weight: lighter;
+    padding-left: 7px;
+}
+
+
+.fa-question-circle{
+    margin-top: -4px;
+}
+
+
+
+/*Container à supprimer avant PUSH!!!!!!!!*/
+
+.container1{
+    height: 1000px;
+    width: 100%;
+    background-color: #DCCA8A;
+}
+
+
+
+/*RESPONSIVE NAVBAR*/
+
+@media (max-width: 1000px) and (min-width: 100px){
+
+.connectionNavbar p, .commandeNavbar p{
+    display: none;
+}
+
+.connectionNavbar, .commandeNavbar {
+    width: 30px;
+
+}
+
+.commandeNavbar{
+    margin-top: 3px;
+}
+
+.languesNavbar p{
+    display: none;
+}
+
+}
+
+@media (max-width: 800px) and (min-width: 100px){
+
+    .menuNavbar p {
+        display: none;
+    }   
+    .menuNavbar{
+        width: 70px;
+    }
+    .logoHeader, .logoHeaderMini{
+        display: none;
+    }
+    
+    .helpNavbar p{
+        display: none;
+    }
+
+}
+
+@media (max-width: 800px) and (min-width: 600px){
+        .logoHeaderRespons{
+        display: inline;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 400px){
+        .logoHeaderRespons{
+        display: inline;
+        margin-left: 50px;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 400px) and (min-width: 100px){
+    
+    .commandeNavbar {
+        display: none;
+    }
+
+    .languesNavbar{
+        display: none;
+    }
+
+    .logoHeaderRespons{
+        display: inline;
+        margin-left: 25%;
+        margin-right: 5%;
+    }
+}
