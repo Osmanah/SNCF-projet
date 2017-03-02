@@ -12,6 +12,7 @@
     transition-duration: 0.2s;
     transition-property: all;
     transition-timing-function: ease;
+    z-index: 100;
 }
 
 .topHeaderMini{
@@ -265,6 +266,7 @@ margin-top: 8px;
 
 
 .containerLangues{
+    display: none;
     width: 370px;
     height: 250px;
     background-color: white;
@@ -313,11 +315,11 @@ margin-top: 8px;
 
 /*Container à supprimer avant PUSH!!!!!!!!*/
 
-.container1{
+/*.container1{
     height: 1000px;
     width: 100%;
     background-color: #DCCA8A;
-}
+}*/
 
 
 
