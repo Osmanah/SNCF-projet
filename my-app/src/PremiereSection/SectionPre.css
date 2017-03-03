@@ -1,13 +1,9 @@
-.Section1 {
-    height: 150vh
-}
-
-.Section1Article {
+.section1Article {
     width: 100%;
     height: 572px;
 }
 
-.Section1ContentHeader {
+.section1ContentHeader {
     text-align: left;
     margin-left: 7.1em;
     padding-top: 0.8em;
@@ -15,48 +11,52 @@
     font-weight: 400;
 }
 
-.Section1ContentGeneral {
+.section1ContentGeneral {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     width: 970px;
     height: 426px;
     margin-left: 18em;
-    margin-top: 2.8em;
+    margin-top: 2.6em;
 }
 
-.Section1Content1 {
+.section1Content1 {
     width: 218px;
     height: 405px;
 }
 
-.Section1ContentGeneral :hover {
-    box-shadow: 2px 2px 2px 2px #888888;
+.section1ContentGeneral :hover {
+    box-shadow: 1px 1px 1px 1px #888888;
 }
 
-.Section1ContentPDiv:hover {
+.section1ContentPDiv:hover {
     box-shadow: 0px 0px 0px 0px #888888;
 }
 
-.Section1Content2 {
+.section1Content2 {
     width: 218px;
     height: 405px;
     margin-left: 3%;
 }
 
-.Section1Content3 {
+.section1Content3 {
     width: 218px;
     height: 405px;
     margin-left: 3%;
 }
 
-.Section1Content4 {
+.section1Content4 {
     width: 218px;
     height: 405px;
     margin-left: 3%;
 }
 
-.Section1ContentImage {
+.section1Partie2ImageDiv {
+    margin-top: 1.4%;
+}
+
+.section1ContentImage {
     width: 13.25em;
     height: 13.25em;
 }
@@ -73,42 +73,50 @@
     margin-right: 3%;
 }
 
-.Section1ContentE-Billet {
+.section1ContentE-Billet {
     font-weight: 500;
+    font-size: .8em;
+    padding-left: 0.2em;
     background-color: rgb(220, 12, 90);
     color: white;
     width: 145px;
+    height: 18px;
     margin-top: -0.001em;
-    margin-left: -3%;
+    margin-left: -4%;
 }
 
-.Section1ContentDiscriptionH3 {
+.section1ContentDiscriptionH3 {
     font-size: 1.1em;
     font-weight: 400;
     margin-left: 0.6em;
-    margin-top: -0.5em;
+    margin-top: 0.4em;
+    margin-bottom: 0.2em;
 }
 
-.Section1ContentDiscriptionH33 {
+.section1ContentDiscriptionH33 {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 1.5em;
+    margin-left: 0.6em;
+    margin-bottom: 0.3em;
+}
+
+.section1ContentDiscriptionH34 {
     font-size: 1.1em;
     font-weight: 400;
     margin-left: 0.6em;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
 }
 
-.Section1ContentDiscriptionH34 {
-    font-size: 1.1em;
-    font-weight: 400;
-    margin-left: 0.6em;
-}
-
-.Section1ContentDiscriptionP {
+.section1ContentDiscriptionP {
     margin-left: 0.8em;
     width: 203px;
     font-size: .8em;
-    margin-top: -1.3em;
+    margin-bottom: 1em;
 }
 
-.Section1ContentButton {
+.section1ContentButton {
     position: relative;
     display: inline-block;
     border: 0;
@@ -120,32 +128,32 @@
     background: linear-gradient(#d9007b, #ec005b);
 }
 
-.Section1ContentDiscriptionDiv3 {
-    margin-top: -8%;
+.section1ContentDiscriptionDiv3 {
+    margin-top: -9%;
 }
 
-.Section1ContentPDiv {
+.section1ContentPDiv {
     display: inline-block;
     margin-left: -1em;
 }
 
-.Section1ContentP {
-    margin: 0.85em 5em;
+.section1ContentP {
+    margin: 0.85em 4em;
     font-size: 0.875em;
     width: 100px;
 }
 
-.Section1ContentIconDiv {
+.section1ContentIconDiv {
     position: absolute;
     right: 0.4em;
-    top: 0.38em;
+    top: 0.39em;
     background: #FFF;
     width: 1.75em;
     height: 1.75em;
     border-radius: 50%;
 }
 
-.Section1ContentIconSpan {
+.section1ContentIconSpan {
     color: #dc0178;
     font-size: 1em;
     line-height: 1.8em;
@@ -153,8 +161,8 @@
     padding-left: 10px;
 }
 
-#Section1ContentIcon {
-    margin-top: -10%;
+#section1ContentIcon {
+    margin-top: -9%;
 }
 
 
@@ -190,6 +198,7 @@
     text-align: left;
     margin-top: 2em;
     margin-left: 0.3em;
+    margin-bottom: 3%;
 }
 
 .section1Partie3Logos {
@@ -202,62 +211,85 @@
     margin-left: -58.5%;
 }
 
-.Section1ContentImage0 {
+.section1ContentImage0 {
     height: 35px;
     width: 67px;
     margin-left: 17.9em;
 }
 
-.Section1ContentImage1 {
+.section1ContentImage1 {
     height: 35px;
     width: 67px;
     margin-left: 0.5em;
 }
 
-.Section1ContentImage2 {
+.section1ContentImage2 {
     height: 35px;
     width: 80px;
     margin-left: 0.5em;
 }
 
-.Section1ContentImage3 {
+.section1ContentImage3 {
     height: 35px;
     width: 119px;
     margin-left: 0.5em;
 }
 
-.Section1ContentImage4 {
+.section1ContentImage4 {
     height: 35px;
     width: 44px;
     margin-left: 0.5em;
 }
 
-.Section1ContentImage5 {
+.section1ContentImage5 {
     height: 36px;
     width: 117px;
     margin-left: 0.5em;
 }
 
-.Section1ContentImage6 {
+.section1ContentImage6 {
     height: 36px;
     width: 87px;
     margin-left: 0.5em;
 }
 
-.Section1ContentImage7 {
+.section1ContentImage7 {
     height: 36px;
     width: 96px;
     margin-left: 0.5em;
 }
 
-.Section1ContentImage8 {
+.section1ContentImage8 {
     height: 36px;
     width: 84px;
     margin-left: 0.5em;
 }
 
-.Section1ContentImage9 {
+.section1ContentImage9 {
     height: 36px;
     width: 117px;
     margin-left: 0.5em;
+}
+
+.section1ButtonDiv {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: -31.5%;
+}
+
+.section1Button {
+    width: 194px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.section1ButtonDiv :hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.section1ButtonSpan {
+    font-size: 1.1em;
 }
