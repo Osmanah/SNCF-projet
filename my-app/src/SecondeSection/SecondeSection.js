@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import './SecondeSection1.css';
-import fond from '/home/simplonco/Documents/Projet/SNCF-projet/my-app/img/fi_mdd-romantique3.jpg';
-import fond2 from '/home/simplonco/Documents/Projet/SNCF-projet/my-app/img/istock-sanjeri_vsc.jpg';
-import fond3 from '/home/simplonco/Documents/Projet/SNCF-projet/my-app/img/flandre_romantique.jpg';
-import fond4 from '/home/simplonco/Documents/Projet/SNCF-projet/my-app/img/couple-visuel-tetiere_vsc.jpg';
+import fond from './../../img/fi_mdd-romantique3.jpg';
+import fond2 from './../../img/istock-sanjeri_vsc.jpg';
+import fond3 from './../../img/flandre_romantique.jpg';
+import fond4 from './../../img/couple-visuel-tetiere_vsc.jpg';
 
 class SecondeSection extends Component {
     render() {
