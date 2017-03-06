@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import './SectionPre.css'
-import Section1Image0 from '/home/osman/SNCF-projet/my-app/img/section1.jpg';
-import Section1Image2 from '/home/osman/SNCF-projet/my-app/img/section1image2.jpg';
-import Section1Image3 from '/home/osman/SNCF-projet/my-app/img/section1image3.jpg';
-import Section1Image4 from '/home/osman/SNCF-projet/my-app/img/section1image4.jpg';
-import Section1Image5 from '/home/osman/SNCF-projet/my-app/img/section1deuxiemeP.jpg';
+import Section1Image0 from './section1.jpg';
+import Section1Image2 from './section1image2.jpg';
+import Section1Image3 from './section1image3.jpg';
+import Section1Image4 from './section1image4.jpg';
+import Section1Image5 from './section1deuxiemeP.jpg';
 
 // PLACER ICI VOTRE LIEN D'IMPORT
 
