@@ -145,3 +145,14 @@
     margin-left: 1050px;
     font-weight: bold;
 }
+
+@media (min-width:480px) and (max-width:780px){
+#week2{display :none ;}
+#week3{display :none ;}
+#texteweek2{display :none;}
+#texteweek3{display: none;}
+}
+
+@media (min-width:480px) and (max-width:780px){
+  #containersection2{display: none;}
+}

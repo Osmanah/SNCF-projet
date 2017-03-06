@@ -1,0 +1,128 @@
+*, p, h1, h2, h3, h4, span{
+  font-family: sans-serif;
+}
+
+a{
+  color:#000000;
+  text-decoration: none;
+}
+a:hover{
+  color:#E0570A;
+}
+
+#container, #container-conditions{
+  width:100%;
+  padding:30px 0 0 0;
+}
+
+#container-conditions{
+  background:#ECEDEB;
+}
+
+section{
+  width:80%;
+  margin:auto;
+}
+
+h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* ======================================== */
+
+.dest-menu-deroulant{
+  display: flex;
+  border-bottom: 1px solid gray;
+}
+
+.dest-menu-deroulant div{
+  margin: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px 0;
+  font-size: 0.9rem;
+}
+
+.dest-menu-deroulant i{
+  font-size: 1.5rem;
+}
+
+.dest-hotel, .dest-weekend, .dest-vol, .dest-destinations, .dest-conditions-texte{
+  padding:10px 0;
+}
+
+.dest-train p, .dest-hotel p, .dest-weekend p, .dest-vol p, .dest-destinations p{
+  line-height: 30px;
+}
+
+.dest-train a, .dest-hotel a, .dest-weekend a, .dest-vol a, .dest-destinations a{
+  padding:0 2px;
+  font-family: serif;
+  font-size: 0.9rem;
+}
+
+.dest-train a:first-child, .dest-hotel a:first-child, .dest-weekend a:first-child, .dest-vol a:first-child, .dest-destinations a:first-child{
+  padding:0;
+  margin: 0;
+}
+
+
+.dest-clic{
+  color: #E0570A;
+  border-bottom: 3px solid #E0570A;
+}
+
+.dest-clic i{
+    -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+    -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/******/
+
+.dest-conditions{
+  background: #ECEDEB;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 25px 0px;
+}
+
+#btn-masquer-conditions{
+  font-size:2rem;
+  cursor: pointer;
+}
+
+.dest-clic-conditions{
+  -webkit-transform: rotate(90deg);
+transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 0.3s;
+transition: transform 0.3s;
+}
+
+.dest-conditions-texte h3{
+  font-size: 1rem;
+  font-weight: bold;
+  margin:15px 0;
+  text-transform: uppercase;
+}
+
+.dest-conditions-texte p{
+  text-align: justify;
+  font-size: 0.7rem;
+  line-height: 14px;
+}
+
+/* =================================================== */
+
+#grow, #grow-cond {
+    -moz-transition: height .5s;
+    -ms-transition: height .5s;
+    -o-transition: height .5s;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+    height: 0;
+    overflow: hidden;
+  }
