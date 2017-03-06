@@ -14,9 +14,7 @@ class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {isToggleOn: false};
-
     console.log('start');
-
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
   }

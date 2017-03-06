@@ -18,6 +18,10 @@ button, input, select {
     appearance: none;
 }
 
+.Header {
+	z-index: 50;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
