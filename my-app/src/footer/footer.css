@@ -51,7 +51,7 @@ a {
     color: inherit;
 }
 
-img {
+.Footer img {
     padding: 5px;
 }
 
@@ -79,7 +79,7 @@ h3 {
     padding: 0px 28px 2px 39px;
 }
 
-.fa {
+.Footer .fa {
     font-size: 20px;
     padding: 5px;
     border: solid 1px;

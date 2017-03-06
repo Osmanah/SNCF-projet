@@ -6,6 +6,7 @@ import Section1 from './PremiereSection/Section1.js';
 import SecondeSection from './SecondeSection/SecondeSection.js';
 import Footer from './footer/footer.js';
 import Footer2 from './Footer2/Footer2.js';
+import Destinations from './destinations/Destinations.js';
 
 
 // PLACER ICI VOTRE LIEN D'IMPORT
@@ -17,6 +18,13 @@ class App extends Component {
     return (
       <div className="App">
 
+<Navbar/>
+<Header/>
+<Section1/>
+<SecondeSection/>
+<Destinations/>
+<Footer/>
+<Footer2/>
 
       {/*PLACER LES COMPONENTS <> ICI POUR VOTRE PREVIEW PERSO
       ATTENTION !!!! SUPPRIMER BIEN VOS COMPONENTS AVANT DE PUSHER !
