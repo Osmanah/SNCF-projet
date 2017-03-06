@@ -1,3 +1,8 @@
+
+/*NAVBAR*/
+/*==========================================*/
+/*====================*/
+
 .topHeader{
     height: 55px;
     width: 100%;
@@ -14,6 +19,8 @@
     transition-timing-function: ease;
     z-index: 100;
 }
+
+/*Scroll animation navbar*/
 
 .topHeaderMini{
     width: 100%;
@@ -64,6 +71,9 @@
     display: flex;
     align-items: center;
 }
+
+/*BURGER*/
+/*==========================================*/
 
 .burger{
     width: 36px;
@@ -118,6 +128,8 @@
   transform: rotate(45deg);
 }
 
+/*==========================================*/
+/*====================*/
 
 .connectionNavbar, .commandeNavbar {
     color: #1283C5;
@@ -155,6 +167,11 @@
 .connectionNavbar p, .commandeNavbar p {
     padding-left: 7px;
 }
+
+/*LOGO*/
+/*==========================================*/
+/*====================*/
+
 
 .logoHeader{
     backface-visibility: hidden;
@@ -199,6 +216,9 @@ height:40px;
 width: 40px;
 margin-top: 8px;
 }
+
+/*Logo animation scrool*/
+/*==========================================*/
 
 .logoHeaderMini{
     
@@ -257,6 +277,18 @@ margin-top: 8px;
     font-weight: bold;
 }
 
+.languesNavbar a{
+cursor : pointer;
+}
+
+.languesNavbar a p{
+    font-weight: lighter;
+}
+
+.languesNavbar a p:hover{
+    color: #1283C5;
+}
+
 .fa-chevron-down{
     padding-left: 10px;
     padding-right: 5px;
@@ -264,6 +296,8 @@ margin-top: 8px;
     color: #1283C5;
 }
 
+/* Div fantôme menu déroulant drapeau*/
+/*==========================================*/
 
 .containerLangues{
     display: none;
@@ -275,8 +309,10 @@ margin-top: 8px;
     margin-left: -350px;
     position: absolute;
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.19);
-    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.19);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.19);   
 }
+
+
 
 .flagAll{
     width: 100%;
@@ -324,6 +360,8 @@ margin-top: 8px;
 
 
 /*RESPONSIVE NAVBAR*/
+/*==========================================*/
+/*====================*/
 
 @media (max-width: 1000px) and (min-width: 100px){
 
@@ -396,3 +434,4 @@ margin-top: 8px;
         margin-right: 5%;
     }
 }
+

@@ -14,7 +14,6 @@ function scrollTopHeader() {
             header.classList.add("topHeaderMini");
             logoSncf.classList.add("logoHeaderMini")
 
-            console.log("works!!")
          } 
 
     });

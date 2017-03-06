@@ -6,6 +6,7 @@ import Header from './header/Header';
 
 class App extends Component {
   render() {
+    console.log('start app');
     return (
       <div className="App">
 
@@ -13,8 +14,7 @@ class App extends Component {
       ATTENTION !!!! SUPPRIMER BIEN VOS COMPONENTS AVANT DE PUSHER !
       BISOUS D'AMOUR
       */}
-      <Navbar></Navbar>
-      <Header></Header>
+      
       </div>
     );
   }

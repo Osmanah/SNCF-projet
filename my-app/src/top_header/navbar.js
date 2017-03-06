@@ -10,13 +10,28 @@ import './containerLangues.js';
 
 
 class Navbar extends Component {
+ 
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: false};
 
+    console.log('start');
 
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() { 
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
     // inserer fonction js avec syntaxe REACT
   render() {
+
     return (
     <div className="navbar">
-        <div className="topHeader">
+      <div className="topHeader">
         <div className="navbarLeft">  
             <div className="menuNavbar">
                 <a href=""><div className="burger">
@@ -41,11 +56,12 @@ class Navbar extends Component {
         </div>
       <div className="navbarRight"> 
             <div className="languesNavbar">
-                <img src={flagFrance} className="flagFrance" alt="logo" />
+                <a onClick={this.handleClick} >
+                <img src={flagFrance} className="flagFrance" alt="logo"/>
                 <p>France</p>
-                <a href=""><i className="fa fa-chevron-down" aria-hidden="true">
+                <i className="fa fa-chevron-down"  aria-hidden="true">
                 </i></a>
-                <div className="containerLangues">
+                <div className="containerLangues"  style={{display:this.state.isToggleOn ? 'block' : 'none'}}>
                     <img src={flagAll} className="flagAll" alt="logo" />
                 </div>
             </div>
@@ -57,11 +73,14 @@ class Navbar extends Component {
       </div>
       </div>
       <div className="container1">
-      </div>
+     </div>
     </div>
    
     );
   }
+
+
 }
+
 
 export default Navbar;
