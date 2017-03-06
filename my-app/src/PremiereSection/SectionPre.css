@@ -293,13 +293,3 @@
 .section1ButtonSpan {
     font-size: 1.1em;
 }
-
-@media screen and (max-width: 1280px) {
-  .section1DeuxiemeP {
-    margin-right: 2em;
-
-  }
-  .section1ContentHeader{
-    background-color: red;
-  }
-}
