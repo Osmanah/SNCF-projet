@@ -1,0 +1,157 @@
+.SecondeSection {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.textesection2 {
+    position: absolute;
+    left: 150px;
+    top: 269vh;
+    font-family: AvenirBook, Arial, sans-serif;
+    font-size: 37px;
+    text-align: left;
+    text-transform: uppercase;
+    color: black;
+}
+
+.boutonDecouvrir {
+    position: absolute;
+    font-family: AvenirBook, Arial, sans-serif;
+    top: 269vh;
+    right: 140px;
+    background-color: transparent;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thin;
+    width: 95px;
+    height: 35px;
+}
+
+.boutonDecouvrir2 {
+    position: absolute;
+    height: 45px;
+    width: 300px;
+    top: 360vh;
+    color: white;
+    font-family: AvenirBook, Arial, sans-serif;
+    left: 500px;
+    background-color: #0088CE;
+    border-radius: 5px;
+}
+
+.fondroman {
+    background-size: cover;
+}
+
+.Trait {
+    position: absolute;
+    top: 277vh;
+    left: 150px;
+}
+
+.paragraphesection2 {
+    flex-wrap: wrap;
+    position: absolute;
+    top: 280vh;
+    left: 150px;
+    white-space: pre-line;
+    font-size: 15px;
+}
+
+.week1 {
+    position: absolute;
+    top: -11vh;
+    margin-left: 150px;
+}
+
+.week2 {
+    position: absolute;
+    top: -11vh;
+    margin-left: 500px;
+}
+
+.week3 {
+    align-items: flex-end;
+    position: absolute;
+    top: -11vh;
+    margin-left: 850px;
+}
+
+.texteweek1 {
+    font-family: AvenirBook, Arial, sans-serif;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 25vh;
+    margin-left: 150px;
+    background-color: white;
+}
+
+.texteweek2 {
+    font-family: AvenirBook, Arial, sans-serif;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 25vh;
+    margin-left: 500px;
+    background-color: white;
+}
+
+.texteweek3 {
+    font-family: AvenirBook, Arial, sans-serif;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 25vh;
+    margin-left: 850px;
+    background-color: white;
+}
+
+.description {
+    margin-left: 10px;
+}
+
+.description2 {
+    margin-left: 10px;
+}
+
+.Lirelasuite {
+    font-family: AvenirBook, Arial, sans-serif;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 50vh;
+    margin-left: 340px;
+    font-weight: bold;
+}
+
+.Lirelasuite2 {
+    font-family: AvenirBook, Arial, sans-serif;
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    top: 50vh;
+    margin-left: 690px;
+    font-weight: bold;
+}
+
+.Lirelasuite3 {
+    font-family: AvenirBook, Arial, sans-serif;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 50vh;
+    margin-left: 1050px;
+    font-weight: bold;
+}
+
+.containersection2{
+  position: absolute;
+  top: 300vh;
+}
+
+/*.SecondeSection{
+  position: absolute;
+
+}*/
