@@ -6,7 +6,7 @@
 .textesection2 {
     position: absolute;
     left: 150px;
-    top: 2px;
+    top: 269vh;
     font-family: AvenirBook, Arial, sans-serif;
     font-size: 37px;
     text-align: left;
@@ -17,7 +17,7 @@
 .boutonDecouvrir {
     position: absolute;
     font-family: AvenirBook, Arial, sans-serif;
-    top: 50px;
+    top: 269vh;
     right: 140px;
     background-color: transparent;
     border-color: black;
@@ -32,7 +32,7 @@
     position: absolute;
     height: 45px;
     width: 300px;
-    top: 610px;
+    top: 360vh;
     color: white;
     font-family: AvenirBook, Arial, sans-serif;
     left: 500px;
@@ -46,14 +46,14 @@
 
 .Trait {
     position: absolute;
-    top: 95px;
+    top: 277vh;
     left: 150px;
 }
 
 .paragraphesection2 {
     flex-wrap: wrap;
     position: absolute;
-    top: 120px;
+    top: 280vh;
     left: 150px;
     white-space: pre-line;
     font-size: 15px;
@@ -61,20 +61,20 @@
 
 .week1 {
     position: absolute;
-    top: 180px;
+    top: -11vh;
     margin-left: 150px;
 }
 
 .week2 {
     position: absolute;
-    top: 180px;
+    top: -11vh;
     margin-left: 500px;
 }
 
 .week3 {
     align-items: flex-end;
     position: absolute;
-    top: 180px;
+    top: -11vh;
     margin-left: 850px;
 }
 
@@ -83,7 +83,7 @@
     position: absolute;
     height: 200px;
     width: 300px;
-    top: 400px;
+    top: 25vh;
     margin-left: 150px;
     background-color: white;
 }
@@ -93,7 +93,7 @@
     position: absolute;
     height: 200px;
     width: 300px;
-    top: 400px;
+    top: 25vh;
     margin-left: 500px;
     background-color: white;
 }
@@ -103,7 +103,7 @@
     position: absolute;
     height: 200px;
     width: 300px;
-    top: 400px;
+    top: 25vh;
     margin-left: 850px;
     background-color: white;
 }
@@ -121,7 +121,7 @@
     position: absolute;
     height: 200px;
     width: 300px;
-    top: 550px;
+    top: 50vh;
     margin-left: 340px;
     font-weight: bold;
 }
@@ -131,7 +131,7 @@
     position: absolute;
     height: 200px;
     width: 300px;
-    top: 550px;
+    top: 50vh;
     margin-left: 690px;
     font-weight: bold;
 }
@@ -141,18 +141,17 @@
     position: absolute;
     height: 200px;
     width: 200px;
-    top: 550px;
+    top: 50vh;
     margin-left: 1050px;
     font-weight: bold;
 }
 
-@media (min-width:480px) and (max-width:780px){
-#week2{display :none ;}
-#week3{display :none ;}
-#texteweek2{display :none;}
-#texteweek3{display: none;}
+.containersection2{
+  position: absolute;
+  top: 300vh;
 }
 
-@media (min-width:480px) and (max-width:780px){
-  #containersection2{display: none;}
-}
+/*.SecondeSection{
+  position: absolute;
+
+}*/
