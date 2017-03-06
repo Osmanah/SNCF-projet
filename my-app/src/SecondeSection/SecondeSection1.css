@@ -153,6 +153,8 @@
 .containersection2{
   position: absolute;
   top: 300vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*.SecondeSection{
