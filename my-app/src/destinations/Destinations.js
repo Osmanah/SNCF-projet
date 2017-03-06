@@ -5,6 +5,53 @@ import script from './script.js';
 
 
 class Destinations extends Component {
+
+  constructor(props){
+    super(props);
+    this.state={isToggleOn: false};
+
+    this.handleClickTrain = this.handleClickTrain.bind(this);
+    this.handleClickHotel = this.handleClickHotel.bind(this);
+    this.handleClickWeekend = this.handleClickWeekend.bind(this);
+    this.handleClickVol = this.handleClickVol.bind(this);
+    this.handleClickDestinations = this.handleClickDestinations.bind(this);
+    this.deroulerConditions = this.deroulerConditions.bind(this);
+
+  }
+
+  handleClickTrain(){
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
+
+  handleClickHotel(){
+    this.setState(prevState => ({
+      isToggleOOn: !prevState.isToggleOOn
+    }));
+  }
+  handleClickWeekend(){
+    this.setState(prevState => ({
+      isToggleOOOn: !prevState.isToggleOOOn
+    }));
+  }
+  handleClickVol(){
+    this.setState(prevState => ({
+      isToggleOOOOn: !prevState.isToggleOOOOn
+    }));
+  }
+  handleClickDestinations(){
+    this.setState(prevState => ({
+      isToggleOOOOOn: !prevState.isToggleOOOOOn
+    }));
+  }
+
+  deroulerConditions(){
+    this.setState(prevState => ({
+      deroulerConditions: !prevState.deroulerConditions
+    }));
+  }
+
   render() {
     return (
       <div className="Destinations">
@@ -16,24 +63,24 @@ class Destinations extends Component {
                   <div className="dest-menu-deroulant">
 
 
-                      <div id="btn-train" onclick="growDiv()">
+                      <div id="btn-train" style={{color:this.state.isToggleOn? 'orange' : 'black'}} onClick={this.handleClickTrain}>
                           <i id="dest-caret-train" className="fa fa-caret-right" aria-hidden="true"></i> Train
                       </div>
 
 
-                      <div id="btn-hotel" onclick="growDiv()">
+                      <div id="btn-hotel" style={{color:this.state.isToggleOOn? 'orange' : 'black'}} onClick={this.handleClickHotel}>
                           <i id="dest-caret-hotel" className="fa fa-caret-right" aria-hidden="true"></i> Hôtel
                       </div>
 
-                      <div id="btn-weekend" onclick="growDiv()">
+                      <div id="btn-weekend" style={{color:this.state.isToggleOOOn? 'orange' : 'black'}} onClick={this.handleClickWeekend}>
                           <i id="dest-caret-weekend" className="fa fa-caret-right" aria-hidden="true"></i> Week-end
                       </div>
 
-                      <div id="btn-vol" onclick="growDiv()">
+                      <div id="btn-vol" style={{color:this.state.isToggleOOOOn? 'orange' : 'black'}} onClick={this.handleClickVol}>
                           <i id="dest-caret-vol" className="fa fa-caret-right" aria-hidden="true"></i> Vol
                       </div>
 
-                      <div id="btn-destinations" onclick="growDiv()">
+                      <div id="btn-destinations" style={{color:this.state.isToggleOOOOOn? 'orange' : 'black'}} onClick={this.handleClickDestinations}>
                           <i id="dest-caret-destinations" className="fa fa-caret-right" aria-hidden="true"></i> Destinations
                       </div>
 
@@ -43,7 +90,7 @@ class Destinations extends Component {
                   <div>
                     <div id="grow">
                       <div className="measuringWrapper">
-                        <div className="dest-train">
+                        <div className="dest-train" style={{display:this.state.isToggleOn? 'block' : 'none'}}>
                           <p><a href="#">Train Paris Bordeaux</a>
                           <a href="#">Train Paris Marseille</a>
                           <a href="#">Train Toulouse Paris</a>
@@ -59,7 +106,7 @@ class Destinations extends Component {
                     </div>
                     <div id="grow">
                       <div className="measuringWrapper">
-                      <div className="dest-hotel">
+                      <div className="dest-hotel" style={{display:this.state.isToggleOOn? 'block' : 'none'}}>
                           <p><a href="#">Hôtel Paris</a>
                           <a href="#">Hôtel Barcelone</a>
                           <a href="#">Hôtel Amsterdam</a>
@@ -75,7 +122,7 @@ class Destinations extends Component {
                   </div>
                   <div id="grow">
                     <div className="measuringWrapper">
-                      <div className="dest-weekend">
+                      <div className="dest-weekend" style={{display:this.state.isToggleOOOn? 'block' : 'none'}}>
                         <p><a href="#">Week-end Paris</a>
                           <a href="#">Week-end Prague</a>
                           <a href="#">Week-end Amsterdam</a>
@@ -91,7 +138,7 @@ class Destinations extends Component {
                   </div>
                   <div id="grow">
                     <div className="measuringWrapper">
-                      <div className="dest-vol">
+                      <div className="dest-vol" style={{display:this.state.isToggleOOOOn? 'block' : 'none'}}>
                         <p>  <a href="#">Vol Paris</a>
                           <a href="#">Vol Barcelone</a>
                           <a href="#">Vol Amsterdam</a>
@@ -107,7 +154,7 @@ class Destinations extends Component {
                   </div>
                   <div id="grow">
                     <div className="measuringWrapper">
-                      <div className="dest-destinations">
+                      <div className="dest-destinations" style={{display:this.state.isToggleOOOOOn? 'block' : 'none'}}>
                           <p><a href="#">Paris</a>
                           <a href="#">Barcelone</a>
                           <a href="#">Amsterdam</a>
@@ -126,7 +173,7 @@ class Destinations extends Component {
           </div>
           <div id="container-conditions">
               <section className="dest-conditions">
-                  <div>
+                  <div onClick={this.deroulerConditions}>
                       <p>(1) (2) Voir les conditions des offres</p>
                   </div>
                   <div>
@@ -137,7 +184,7 @@ class Destinations extends Component {
                 </section>
                 <section id="grow-cond">
                     <div className="measuringCond">
-                      <div className="dest-conditions-texte">
+                      <div className="dest-conditions-texte" style={{display:this.state.deroulerConditions? 'block' : 'none'}}>
 
               <h3>OFFRE EXCEPTIONNELLE :</h3>
 
