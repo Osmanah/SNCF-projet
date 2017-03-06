@@ -12,9 +12,6 @@ class App extends Component {
       	ATTENTION !!!! SUPPRIMER BIEN VOS COMPONENTS AVANT DE PUSHER !
       	BISOUS D'AMOUR */}
 
-		<Header></Header>
-
-
       </div>
     );
   }
