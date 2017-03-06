@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './top_header/navbar.js'
 import Header from './header/Header';
+import Section1 from './PremiereSection/Section1.js';
+
 // PLACER ICI VOTRE LIEN D'IMPORT
+
 
 class App extends Component {
   render() {
@@ -15,6 +18,7 @@ class App extends Component {
       BISOUS D'AMOUR
       */}
       
+
       </div>
     );
   }
