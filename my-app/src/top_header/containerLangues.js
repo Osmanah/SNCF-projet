@@ -1,16 +1,43 @@
-import React, { Component } from 'react';
+function menuDeroulantLang(){
+
+
+// var buttonLangue = document.querySelector(".fa-chevron-down");
+// var containerLang = document.querySelector(".containerLangues"); 
+// containerLang.style.visibility = "hidden";
+
+// buttonLangue.addEventListener("click", function(event){
+//     var containerLang = document.querySelector(".containerLangues"); 
+//     containerLang.style.visibility = "visible";
+// });
+
+}
+
+menuDeroulantLang()
+
+
+/*import React, { Component } from 'react';
 import logo from'./../../img/voyages-sncf-fr-FR.png';
 import flagFrance from'./../../img/France-Flag.png';
 import flagAll from'./../../img/flagAll.png';
-import logoRespon from'./../../img/logoRespon.png';
 import './navbar.css';
 import './scrollfx.js';
 import './containerLangues.js';
 
-
-
 class Navbar extends Component {
 
+    constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
 
     // inserer fonction js avec syntaxe REACT
   render() {
@@ -37,13 +64,13 @@ class Navbar extends Component {
                 </a>
             </div>
             <img src={logo} className="logoHeader" alt="logo" />
-            <img src={logoRespon} className="logoHeaderRespons" alt="logoMini" />
         </div>
       <div className="navbarRight"> 
             <div className="languesNavbar">
                 <img src={flagFrance} className="flagFrance" alt="logo" />
                 <p>France</p>
-                <a href=""><i className="fa fa-chevron-down" aria-hidden="true">
+                <a href=""><i className="fa fa-chevron-down" aria-hidden="true" onClick={this.handleClick}>
+        {this.state.isToggleOn ? 'ON' : 'OFF'}
                 </i></a>
                 <div className="containerLangues">
                     <img src={flagAll} className="flagAll" alt="logo" />
@@ -64,4 +91,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default Navbar;*/
