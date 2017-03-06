@@ -1,6 +1,8 @@
 .SecondeSection {
+  margin-top: 3vh;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .textesection2 {
@@ -48,6 +50,7 @@
     position: absolute;
     top: 277vh;
     left: 150px;
+    color: black;
 }
 
 .paragraphesection2 {
@@ -63,6 +66,7 @@
     position: absolute;
     top: -11vh;
     margin-left: 150px;
+
 }
 
 .week2 {
@@ -84,7 +88,7 @@
     height: 200px;
     width: 300px;
     top: 25vh;
-    margin-left: 150px;
+    margin-left: 155px;
     background-color: white;
 }
 
@@ -94,7 +98,7 @@
     height: 200px;
     width: 300px;
     top: 25vh;
-    margin-left: 500px;
+    margin-left: 505px;
     background-color: white;
 }
 
@@ -104,12 +108,12 @@
     height: 200px;
     width: 300px;
     top: 25vh;
-    margin-left: 850px;
+    margin-left: 855px;
     background-color: white;
 }
 
 .description {
-    margin-left: 10px;
+    margin-left: -5vh;
 }
 
 .description2 {
@@ -142,7 +146,7 @@
     height: 200px;
     width: 200px;
     top: 50vh;
-    margin-left: 1050px;
+    margin-left: 1040px;
     font-weight: bold;
 }
 

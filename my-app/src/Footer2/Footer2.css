@@ -1,0 +1,82 @@
+footer {
+bottom:0px;
+height:auto;
+right:0%;
+left:0%;
+/*position:absolute;*/
+width: 100%;
+background-color: black;
+display: inline-flex;
+
+}
+/*colome3{
+  color: white;
+}*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+h6 {
+  color: white;
+  display: inline-flex;
+  margin-left: 15%;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: -40px;
+
+}
+.Footer2 a{
+  color:white;
+  /*display:inline-flex;*/
+  font-style: AvenirBook,Arial,sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+  color: grey;
+  background-color: transparent;
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#list1{
+  color: white;
+  margin-left: 20px;
+  display: inline-flex;
+  margin-top:-40px;
+  padding-top: -20px
+
+}
+.Footer list1 ul{
+  color:white;
+}
+.Footer list1 li{
+  color: white;
+}
+#list2{
+  color: white;
+  margin-left: 25px;
+  display: inline-flex;
+  margin-top:-40px;
+  padding-top: -20px
+}
+#list3{
+  color: white;
+  margin-left: 15px;
+  display: inline-flex;
+  margin-top:-40px;
+  padding-top: -20px
+  }
+#list4{
+    color: white;
+    margin-left: 37px;
+    display: inline-flex;
+    margin-top:-40px;
+    padding-top: -20px;
+  }

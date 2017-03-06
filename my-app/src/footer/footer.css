@@ -1,0 +1,110 @@
+.Footer {
+    background: #000;
+    color: #fff;
+    min-height: 7em;
+    padding: 5% 0 5% 10%;
+    font-size: 10px;
+}
+
+.footer-row {
+    text-align: left;
+    padding: 0 0 0 1em;
+}
+
+.footer-top {
+    display: inline-flex;
+    padding: 2em 1em 4em 2em;
+    font-size: 13px;
+}
+
+.footerrowtable {
+    border-bottom: solid 0.1px grey;
+}
+
+.footer-partner {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+    margin-bottom: 5em;
+    padding-left: 0;
+    padding-bottom: 3em;
+    width: 25%;
+}
+
+.column {
+    display: inline-flex;
+}
+
+.column-social {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.apli {
+    display: inline-flex;
+    list-style-type: none;
+    width: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Footer img {
+    padding: 5px;
+}
+
+.newsletter {
+    padding-left: 15em;
+}
+
+.engage {
+    border: solid 0.1px grey;
+    border-radius: 10px;
+}
+
+.button {
+    padding: 16px;
+    border: 0em;
+    border-radius: 10px;
+    background-color: #0f1011;
+    height: 30px;
+    width: 600px;
+    position: absolute;
+    margin-left: 200px;
+}
+
+h3 {
+    padding: 0px 28px 2px 39px;
+}
+
+.Footer .fa {
+    font-size: 20px;
+    padding: 5px;
+    border: solid 1px;
+    border-radius: 100%;
+    color: grey;
+}
+
+.social {
+    padding: 4px;
+}
+
+#footer-newsletter-field-wrapper {
+    background-color: grey;
+    color: grey;
+}
+
+#input .input {
+    color: white;
+    background-color: grey;
+}
+
+.newsl {
+    padding-right: 36px;
+}
+
+.paraph {
+    margin-right: 5em;
+}
