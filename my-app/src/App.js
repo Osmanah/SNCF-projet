@@ -15,13 +15,7 @@ class App extends Component {
     return (
       <div className="App">
 
-
-
-
-      <Navbar></Navbar>
-      <Header></Header>
-      <Section1></Section1>
-      <SecondeSection></SecondeSection>
+  
 
 
       </div>
