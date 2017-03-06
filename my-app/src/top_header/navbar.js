@@ -13,10 +13,10 @@ class Navbar extends Component {
  
   constructor(props) {
     super(props);
-    this.state = {isToggleOn: false};
-    console.log('start');
+    this.state = {isToggleOn: false, isBurgerActive: true};
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
+    this.burgerClick = this.burgerClick.bind(this);
   }
 
   handleClick() { 
@@ -24,6 +24,13 @@ class Navbar extends Component {
       isToggleOn: !prevState.isToggleOn
     }));
   }
+
+  burgerClick() {
+    this.setState(prevState => ({
+      isBurgerActive : !prevState.isBurgerActive
+    }));
+}
+
     // inserer fonction js avec syntaxe REACT
   render() {
 
@@ -32,7 +39,9 @@ class Navbar extends Component {
       <div className="topHeader">
         <div className="navbarLeft">  
             <div className="menuNavbar">
-                <a href=""><div className="burger">
+                <a><div className="burger" onClick={this.burgerClick} style={{display:this.state.isBurgerActive ? 'block' : 'none'}} >
+                </div> 
+                <div className="burger2" onClick={this.burgerClick} style={{display:this.state.isBurgerActive ? 'none' : 'block'}} >
                 </div> 
                 <p>Menu</p>
                 </a> 

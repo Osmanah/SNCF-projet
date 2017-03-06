@@ -64,6 +64,7 @@
 .menuNavbar a{
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .navbar a{
@@ -108,9 +109,69 @@
     margin-top: 8px;
 }
 
+.burger2{
+    display:none;
+    width: 36px;
+    height: 3px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 15%;
+    margin-top: -1px;
+    margin-right: 6px;
+     background: #1283C5;
+}
+
+.burger2::before {
+    margin-top: -8px;
+}
+
+.burger2::after {
+    margin-top: 8px;
+}
+
+.burger2::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background: white; 
+  border-radius: 15%; 
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s; 
+    margin-top: 0px;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);      
+}
+
+.burger2::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 36px;
+  height: 3px;
+  background: white; 
+  border-radius: 15%; 
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s; 
+    margin-top: 0px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
 /* Animation du burger */
 
-.burger:active {
+/*.burger:active {
   background: #1283C5;
 }
 .burger:active::before {
@@ -126,7 +187,7 @@
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-}
+}*/
 
 /*==========================================*/
 /*====================*/
