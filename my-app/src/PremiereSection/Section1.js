@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import './SectionPre.css';
-import Section1Image from '/home/osman/SNCF-projet/my-app/img/section1.jpg';
+import './SectionPre.css'
+import Section1Image0 from '/home/osman/SNCF-projet/my-app/img/section1.jpg';
 import Section1Image2 from '/home/osman/SNCF-projet/my-app/img/section1image2.jpg';
 import Section1Image3 from '/home/osman/SNCF-projet/my-app/img/section1image3.jpg';
 import Section1Image4 from '/home/osman/SNCF-projet/my-app/img/section1image4.jpg';
@@ -11,7 +11,7 @@ import Section1Image5 from '/home/osman/SNCF-projet/my-app/img/section1deuxiemeP
 class Section1 extends Component {
     render() {
         return (
-            <div className="section1">
+            <div className="Section1">
                 <article className="section1Article">
                     <div className="section1Content">
                         <h2 className="section1ContentHeader">DÉCOUVREZ NOS BONS PLANS</h2>
@@ -20,7 +20,7 @@ class Section1 extends Component {
 
                             <div className="section1Content1">
 
-                                <img src={Section1Image} className="section1ContentImage" alt="image"/>
+                                <img src={Section1Image0} className="section1ContentImage" alt=""/>
                                 <div className="section1ContentDis">
                                     <h4 className="section1ContentE-Billet">Jusqu'au 6 mars</h4>
                                     <span>
@@ -51,7 +51,7 @@ class Section1 extends Component {
 
                             <div className="section1Content2">
 
-                                <img src={Section1Image2} className="section1ContentImage" alt="image"/>
+                                <img src={Section1Image2} className="section1ContentImage" alt=""/>
                                 <div className="section1ContentDis">
                                     <h4 className="section1ContentE-Billet">Promotion</h4>
                                     <span>
@@ -82,7 +82,7 @@ class Section1 extends Component {
 
                             <div className="section1Content3">
 
-                                <img src={Section1Image3} className="section1ContentImage" alt="image"/>
+                                <img src={Section1Image3} className="section1ContentImage" alt=""/>
                                 <div className="section1ContentDis3">
                                     <span>
                                         <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
@@ -110,7 +110,7 @@ class Section1 extends Component {
 
                             <div className="section1Content4">
 
-                                <img src={Section1Image4} className="section1ContentImage" alt="image"/>
+                                <img src={Section1Image4} className="section1ContentImage" alt=""/>
                                 <div className="section1ContentDis3">
                                     <span >
                                         <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
@@ -144,7 +144,7 @@ class Section1 extends Component {
                 </article>
 
                 <div className="section1Partie2ImageDiv">
-                    <img src={Section1Image5} className="section1DeuxiemeP" alt="image"/>
+                    <img src={Section1Image5} className="section1DeuxiemeP" alt=""/>
                 </div>
 
                 <article className="section1Partie3">
@@ -153,17 +153,17 @@ class Section1 extends Component {
                             LAISSER-VOUS TRANSPORTER</h2>
                         <div className="section1Partie3Logos">
                             <p className="section1Partie3LogosP">
-                                <img src='http://www.voyages-sncf.com/sites/default/files/tgv_11.png' className="section1ContentImage0" alt="image"/>
-                                <img src='http://www.voyages-sncf.com/sites/default/files/idtgv_4.png' className="section1ContentImage1" alt="image"/>
-                                <img src='http://www.voyages-sncf.com/sites/default/files/ouigo_7.png' className="section1ContentImage2" alt="image"/>
-                                <img src='http://www.voyages-sncf.com/sites/default/files/intercites_5.png' className="section1ContentImage3" alt="image"/>
-                                <img src='http://www.voyages-sncf.com/sites/default/files/ter_6.png' className="section1ContentImage4" alt="image"/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/tgv_11.png' className="section1ContentImage0" alt=""/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/idtgv_4.png' className="section1ContentImage1" alt=""/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/ouigo_7.png' className="section1ContentImage2" alt=""/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/intercites_5.png' className="section1ContentImage3" alt=""/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/ter_6.png' className="section1ContentImage4" alt=""/>
 
-                                <img src='http://www.voyages-sncf.com/sites/default/files/thalys_10.png' className="section1ContentImage5" alt="image"/>
-                                <img src='http://www.voyages-sncf.com/sites/default/files/eurostar_11.png' className="section1ContentImage6" alt="image"/>
-                                <img src='http://www.voyages-sncf.com/sites/default/files/lyria_2.png' className="section1ContentImage7" alt="image"/>
-                                <img src='http://www.voyages-sncf.com/sites/default/files/ouibus_0.png' className="section1ContentImage8" alt="image"/>
-                                <img src='http://www.voyages-sncf.com/sites/default/files/eurolines_0.png' className="section1ContentImage9" alt="image"/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/thalys_10.png' className="section1ContentImage5" alt=""/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/eurostar_11.png' className="section1ContentImage6" alt=""/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/lyria_2.png' className="section1ContentImage7" alt=""/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/ouibus_0.png' className="section1ContentImage8" alt=""/>
+                                <img src='http://www.voyages-sncf.com/sites/default/files/eurolines_0.png' className="section1ContentImage9" alt=""/>
                             </p>
                         </div>
                         <div className="section1ButtonDiv">
