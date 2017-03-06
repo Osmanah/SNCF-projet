@@ -7,24 +7,17 @@ left:0%;
 width: 100%;
 background-color: black;
 display: inline-flex;
+margin-top: -50px;
 
 }
 /*colome3{
   color: white;
 }*/
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
 
-h6 {
+.Footer2 h6 {
   color: white;
   display: inline-flex;
-  margin-left: 15%;
+  margin-left: 80px;
   font-size: 13px;
   font-weight: normal;
   text-transform: uppercase;
@@ -39,6 +32,7 @@ h6 {
   text-decoration: none;
   color: grey;
   background-color: transparent;
+
 }
 .Footer2 a:hover {
     text-decoration: underline;
@@ -47,7 +41,7 @@ h6 {
 
 #list1{
   color: white;
-  margin-left: 20px;
+  margin-left: 94px;
   display: inline-flex;
   margin-top:-40px;
   padding-top: -20px
@@ -61,21 +55,21 @@ h6 {
 }
 #list2{
   color: white;
-  margin-left: 25px;
+  margin-left: 94px;
   display: inline-flex;
   margin-top:-40px;
   padding-top: -20px
 }
 #list3{
   color: white;
-  margin-left: 15px;
+  margin-left: 94px;
   display: inline-flex;
   margin-top:-40px;
   padding-top: -20px
   }
 #list4{
     color: white;
-    margin-left: 37px;
+    margin-left: 94px;
     display: inline-flex;
     margin-top:-40px;
     padding-top: -20px;
