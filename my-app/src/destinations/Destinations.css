@@ -7,15 +7,17 @@
   background:#ECEDEB;
 }
 
-section{
+.dest-section{
   width:80%;
   margin:auto;
 }
 
-h2{
-  font-size: 2rem;
+.dest-titre-h2{
+  font-size: 2.5em;
   margin-bottom: 20px;
   text-transform: uppercase;
+  font-family: AvenirBook, Arial, sans-serif;
+  font-weight: 400;
 }
 
 /* ======================================== */
@@ -47,7 +49,7 @@ h2{
 }
 
 .dest-train a, .dest-hotel a, .dest-weekend a, .dest-vol a, .dest-destinations a{
-  padding:0 2px;
+  padding:0 8px;
   font-family: serif;
   font-size: 0.9rem;
 }
@@ -55,6 +57,11 @@ h2{
 .dest-train a:first-child, .dest-hotel a:first-child, .dest-weekend a:first-child, .dest-vol a:first-child, .dest-destinations a:first-child{
   padding:0;
   margin: 0;
+}
+
+.dest-train a:hover, .dest-hotel a:hover, .dest-weekend a:hover, .dest-vol a:hover, .dest-destinations a:hover{
+  color:orange;
+  text-decoration: underline;
 }
 
 
@@ -84,6 +91,14 @@ h2{
   cursor: pointer;
 }
 
+.dest-conditions-voir{
+  font-weight: bold;
+}
+
+.dest-pointeur-conditions{
+  cursor: pointer;
+}
+
 .dest-clic-conditions{
   -webkit-transform: rotate(90deg);
 transform: rotate(90deg);
@@ -96,6 +111,7 @@ transition: transform 0.3s;
   font-weight: bold;
   margin:15px 0;
   text-transform: uppercase;
+  padding:0;
 }
 
 .dest-conditions-texte p{
@@ -104,17 +120,6 @@ transition: transform 0.3s;
   line-height: 14px;
 }
 
-/* =================================================== */
-
-/*
-
-#grow, #grow-cond {
-    -moz-transition: height .5s;
-    -ms-transition: height .5s;
-    -o-transition: height .5s;
-    -webkit-transition: height .5s;
-    transition: height .5s;
-    height: 0;
-    overflow: hidden;
-  }
-*/
+.dest-copyright{
+  padding:20px 0;
+}

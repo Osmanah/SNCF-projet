@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './Destinations.css';
 
-
-
 class Destinations extends Component {
 
   constructor(props){
@@ -15,7 +13,6 @@ class Destinations extends Component {
     this.handleClickVol = this.handleClickVol.bind(this);
     this.handleClickDestinations = this.handleClickDestinations.bind(this);
     this.deroulerConditions = this.deroulerConditions.bind(this);
-
   }
 
   handleClickTrain(){
@@ -29,16 +26,19 @@ class Destinations extends Component {
       isToggleOOn: !prevState.isToggleOOn
     }));
   }
+
   handleClickWeekend(){
     this.setState(prevState => ({
       isToggleOOOn: !prevState.isToggleOOOn
     }));
   }
+
   handleClickVol(){
     this.setState(prevState => ({
       isToggleOOOOn: !prevState.isToggleOOOOn
     }));
   }
+
   handleClickDestinations(){
     this.setState(prevState => ({
       isToggleOOOOOn: !prevState.isToggleOOOOOn
@@ -55,17 +55,15 @@ class Destinations extends Component {
     return (
       <div className="Destinations">
 
-
       <div id="container">
-              <section>
-                  <h2>Top destination</h2>
-                  <div className="dest-menu-deroulant">
+              <section className="dest-section">
+                  <h2 className="dest-titre-h2">Top destination</h2>
+                    <div className="dest-menu-deroulant">
 
 
                       <div id="btn-train" style={{color:this.state.isToggleOn? 'orange' : 'black'}} onClick={this.handleClickTrain}>
                           <i id="dest-caret-train" className="fa fa-caret-right" aria-hidden="true"></i> Train
                       </div>
-
 
                       <div id="btn-hotel" style={{color:this.state.isToggleOOn? 'orange' : 'black'}} onClick={this.handleClickHotel}>
                           <i id="dest-caret-hotel" className="fa fa-caret-right" aria-hidden="true"></i> Hôtel
@@ -84,11 +82,10 @@ class Destinations extends Component {
                       </div>
 
 
-                  </div>
+                    </div>
 
                   <div>
-                    <div id="grow">
-                      <div className="measuringWrapper">
+
                         <div className="dest-train" style={{display:this.state.isToggleOn? 'block' : 'none'}}>
                           <p><a href="#">Train Paris Bordeaux</a>
                           <a href="#">Train Paris Marseille</a>
@@ -101,11 +98,8 @@ class Destinations extends Component {
                           <a href="#">Train Rennes Paris</a>
                           <a href="#">Train Lille Bruxelles</a></p>
                         </div>
-                      </div>
-                    </div>
-                    <div id="grow">
-                      <div className="measuringWrapper">
-                      <div className="dest-hotel" style={{display:this.state.isToggleOOn? 'block' : 'none'}}>
+
+                        <div className="dest-hotel" style={{display:this.state.isToggleOOn? 'block' : 'none'}}>
                           <p><a href="#">Hôtel Paris</a>
                           <a href="#">Hôtel Barcelone</a>
                           <a href="#">Hôtel Amsterdam</a>
@@ -117,10 +111,7 @@ class Destinations extends Component {
                           <a href="#">Hôtel Bruxelles</a>
                           <a href="#">Hôtel Strasbourg</a></p>
                       </div>
-                    </div>
-                  </div>
-                  <div id="grow">
-                    <div className="measuringWrapper">
+
                       <div className="dest-weekend" style={{display:this.state.isToggleOOOn? 'block' : 'none'}}>
                         <p><a href="#">Week-end Paris</a>
                           <a href="#">Week-end Prague</a>
@@ -133,10 +124,7 @@ class Destinations extends Component {
                           <a href="#">Week-end Lisbonne</a>
                           <a href="#">Week-end New York</a></p>
                       </div>
-                    </div>
-                  </div>
-                  <div id="grow">
-                    <div className="measuringWrapper">
+
                       <div className="dest-vol" style={{display:this.state.isToggleOOOOn? 'block' : 'none'}}>
                         <p>  <a href="#">Vol Paris</a>
                           <a href="#">Vol Barcelone</a>
@@ -149,10 +137,7 @@ class Destinations extends Component {
                           <a href="#">Vol Bruxelles</a>
                           <a href="#">Vol Strasbourg</a></p>
                       </div>
-                    </div>
-                  </div>
-                  <div id="grow">
-                    <div className="measuringWrapper">
+
                       <div className="dest-destinations" style={{display:this.state.isToggleOOOOOn? 'block' : 'none'}}>
                           <p><a href="#">Paris</a>
                           <a href="#">Barcelone</a>
@@ -165,15 +150,15 @@ class Destinations extends Component {
                           <a href="#">Bruxelles</a>
                           <a href="#">Strasbourg</a></p>
                       </div>
-                    </div>
+
                   </div>
-                  </div>
+
               </section>
           </div>
           <div id="container-conditions">
-              <section className="dest-conditions">
-                  <div onClick={this.deroulerConditions}>
-                      <p>(1) (2) Voir les conditions des offres</p>
+              <section className="dest-section dest-conditions">
+                  <div className="dest-pointeur-conditions" onClick={this.deroulerConditions}>
+                      <p className="dest-conditions-voir">(1) (2) Voir les conditions des offres</p>
                   </div>
                   <div>
                       <div id="btn-masquer-conditions"  onclick="growCond()">
@@ -181,8 +166,8 @@ class Destinations extends Component {
                       </div>
                   </div>
                 </section>
-                <section id="grow-cond">
-                    <div className="measuringCond">
+                <section className="dest-section">
+
                       <div className="dest-conditions-texte" style={{display:this.state.deroulerConditions? 'block' : 'none'}}>
 
               <h3>OFFRE EXCEPTIONNELLE :</h3>
@@ -223,18 +208,12 @@ class Destinations extends Component {
               <p>Economie maximale calculée pour un tarif Jeune en groupe (de 12 à 27 ans inclus). Les tarifs groupes (enfants, jeunes, adultes) sont disponibles seulement sur certains trains, jusqu'à 24 heures avant le départ du train, et dans la limite des billets
                   disponibles à ces tarifs.</p>
 
-                      <p>Copyright © Getty Images, Thinkstock, Photononstop</p>
+                      <p className="dest-copyright">Copyright © Getty Images, Thinkstock, Photononstop</p>
                       </div>
-                    </div>
+
 
                 </section>
               </div>
-
-
-
-
-
-
       </div>
     );
   }
