@@ -5,8 +5,8 @@
 
 .section1ContentHeader {
     text-align: left;
-    margin-left: 4.1em;
-    padding-top: 0.8em;
+    margin-left: 7.1em;
+    padding-top: 1.8em;
     font-size: 2.5em;
     font-weight: 400;
 }
@@ -17,8 +17,8 @@
     position: relative;
     width: 970px;
     height: 426px;
-    margin-left: 10em;
-    margin-top: 2.6em;
+    margin-left: 18em;
+    margin-top: 3.6em;
    margin-bottom: 10%;
 }
 
@@ -97,7 +97,7 @@
 .section1ContentDiscriptionH33 {
     font-size: 1.1em;
     font-weight: 400;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
     margin-left: 0.6em;
     margin-bottom: 0.3em;
 }
@@ -106,7 +106,7 @@
     font-size: 1.1em;
     font-weight: 400;
     margin-left: 0.6em;
-    margin-bottom: 0.3em;
+    margin-bottom: 14.3px;
 }
 
 .section1ContentDiscriptionP {
@@ -135,7 +135,7 @@
 .section1ContentPDiv {
     display: inline-block;
     margin-left: -1em;
-    margin-top: -1em;
+    margin-top: -0em;
 }
 
 .section1ContentP {
